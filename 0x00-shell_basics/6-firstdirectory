@@ -1,0 +1,6 @@
+#!/bin/bash
+eval cd ~
+cd ..
+cd ..
+cd tmp
+sudo mkdir holberton

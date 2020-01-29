@@ -1,9 +1,4 @@
-# Ignore all
-*
-# Unignore all with extensions
-!*.*
-# Unignore all dirs
-!*/
+
 # Ignore emacs autosave~ and #modified# files
 *~
 **/*~
