@@ -1,5 +1,2 @@
 #!/bin/bash
-eval cd ~
-cd ..
-cd ..
 sudo mkdir /tmp/holberton
