@@ -1,3 +1,2 @@
 #!/bin/bash
-sudo touch /tmp/betty
 sudo mv /tmp/betty /tmp/holberton/betty
