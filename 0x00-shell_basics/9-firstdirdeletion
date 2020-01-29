@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo rmdir /tmp/holberton
+sudo rm -r /tmp/holberton
