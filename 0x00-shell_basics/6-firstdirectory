@@ -1,2 +1,5 @@
-#!/bin/bashp
-sudo mkdir  ~/tmp/holberton/betty
+#!/bin/bash
+eval cd ~
+cd ..
+cd ..
+sudo mkdir /tmp/holberton
