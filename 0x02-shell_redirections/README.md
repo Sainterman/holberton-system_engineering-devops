@@ -1,0 +1,1 @@
+# This project helps to understand Shell redirections
