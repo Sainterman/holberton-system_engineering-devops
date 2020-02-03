@@ -1,0 +1,1 @@
+# This project works on shell variables, init files and expansions
