@@ -2,7 +2,7 @@
 # This script is displaying "Holberton School" 10 times
 hora=0
 minutos = 1
-while [ $hora -le 12 ]
+while [ $hora -le 11 ]
 do
     minutos=1
     echo "Hour: $hora"
