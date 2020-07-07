@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# blow up the outside world with echo
+pgrep -l bash
