@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# el comentario de mierda
 netstat -lp
