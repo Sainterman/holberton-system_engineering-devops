@@ -140,10 +140,3 @@ What did I learn from this project:
 - For every additional element, why you are adding it
 
 ---
-
-## Author
-
-* [GitHub - Julian Franco Rua](https://github.com/julianfrancor)
-
-* [LinkedIn - Julian Franco Rua](https://www.linkedin.com/in/julianfrancor/)
-*
