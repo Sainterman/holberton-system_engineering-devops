@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Log in using the private key specifying location of the private key
+sudo ssh -i ~/.ssh/holberton ubuntu@34.75.39.77
