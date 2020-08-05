@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# create a ssh rsa 4096 pair with passphrase betty named holberton
+ssh-keygen -f holberton -N betty -b 4096
