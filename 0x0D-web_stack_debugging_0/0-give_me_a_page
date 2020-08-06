@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # verify apache is running and start running
 echo "Hello Holberton" > /var/www/html/index.html
-sudo service apache2 restart
+service apache2 restart
