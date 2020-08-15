@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Fix it by copying content from sites available to sites enabled
+cd -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
