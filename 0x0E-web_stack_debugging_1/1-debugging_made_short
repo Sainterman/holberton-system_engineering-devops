@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Fix it by copying content from sites available to sites enabled
-cd -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+cp -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
 echo '9791' | sudo tee /run/nginx.pid
