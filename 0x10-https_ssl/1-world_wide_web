@@ -11,7 +11,7 @@ if [ "$#" -eq 2 ];
 then
     displayDomain "$1" "$2"
 else
-    for subdomain in "wwww" "lb-01" "web-01" "web-02"
+    for subdomain in "www" "lb-01" "web-01" "web-02"
     do
         displayDomain "$1" "$subdomain"
     done
