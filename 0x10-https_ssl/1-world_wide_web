@@ -7,10 +7,12 @@ displayDomain ()
 dig "$subdomain.$domain" | awk -v subdomain="$2" '/;; ANSWER SECTION:/{getline; print "The subdomain "subdomain" is a " $4 " record and points to " $5}'
 }
 
-for subdomain in "wwww" "lb-01" "web-01" "web-02"
-do
-    if [ -z "$2" ] || [ "$2" == "$subdomain" ];
-    then
+if [ "$#" -eq 2 ];
+then
+    displayDomain "$1" "$2"
+else
+    for subdomain in "wwww" "lb-01" "web-01" "web-02"
+    do
         displayDomain "$1" "$subdomain"
-    fi
-done
+    done
+fi
