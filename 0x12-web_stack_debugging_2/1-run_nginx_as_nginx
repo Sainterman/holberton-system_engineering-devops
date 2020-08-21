@@ -1,4 +1,4 @@
-#!/urs/bin/env bash
+#!/usr/bin/env bash
 # Update container to use nginx as user nginx
 pkill apache2
 chown nginx /etc/nginx/nginx.conf
