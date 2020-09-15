@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" get tasks from user and export to json file"""
 
 from requests import get
 import json
