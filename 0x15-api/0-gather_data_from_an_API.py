@@ -18,8 +18,8 @@ def get_TODOS(id):
     done = get('{}users/{}/todos?completed=true'.format(DOMAIN, id))
     NUMBER_OF_DONE_TASKS = len(done.json())
     TOTAL_NUMBER_OF_TASKS = len(obj)
-    output = "Employee {} is done with tasks({}/{}):\n"
-    .format(EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS)
+    output = "Employee {} is done with tasks({}/{}):\n".format(
+        EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS)
     print(output)
     for TODO in obj:
         if TODO.get('completed') is True:
