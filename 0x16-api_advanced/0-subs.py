@@ -12,6 +12,8 @@ def number_of_subscribers(subreddit):
     h = {'User-Agent': USER_AGENT}
     req = requests.get(DOMAIN + 'r/{}/about.json'.format(subreddit), headers=h)
     data = req.json()['data']
+    if data is None:
+        return (0)
     if data.get('subscribers') is None:
         return(0)
     return(data.get('subscribers'))
