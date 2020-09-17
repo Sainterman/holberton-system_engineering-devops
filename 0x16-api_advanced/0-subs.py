@@ -2,8 +2,6 @@
 """ Get subscribers count from existing subreddit"""
 
 import requests
-import json
-
 
 DOMAIN = 'https://www.reddit.com/'
 USER_AGENT = 'linux:subredditscript:v1 (by /u/sancagar)'
@@ -11,8 +9,7 @@ USER_AGENT = 'linux:subredditscript:v1 (by /u/sancagar)'
 
 def number_of_subscribers(subreddit):
     """ Request about.json to subredit"""
-    h = requests.utils.default_headers()
-    h.update({'User-Agent': USER_AGENT})
+    h = {'User-Agent': USER_AGENT}
     req = requests.get(DOMAIN + 'r/{}/about.json'.format(subreddit), headers=h)
     data = req.json()['data']
     if data.get('subscribers') is None:
