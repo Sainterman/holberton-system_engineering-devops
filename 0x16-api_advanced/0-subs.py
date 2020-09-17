@@ -6,11 +6,11 @@ import json
 
 
 DOMAIN = 'https://www.reddit.com/'
-
 USER_AGENT = 'linux:subredditscript:v1 (by /u/sancagar)'
 
 
 def number_of_subscribers(subreddit):
+    """ Request about.json to subredit"""
     h = requests.utils.default_headers()
     h.update({'User-Agent': USER_AGENT})
     req = requests.get(DOMAIN + 'r/{}/about.json'.format(subreddit), headers=h)
