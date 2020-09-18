@@ -10,7 +10,6 @@ def recurse(subreddit, after=None, hot_list=[]):
     USER_AGENT = 'linux:subredditscript:v1 (by /u/sancagar)'
     h = {'User-Agent': USER_AGENT}
     URL = DOMAIN + 'r/{}/hot.json'.format(subreddit)
-    params = dict()
     if after:
         URL += '?after={}'.format(after)
     req = requests.get(URL, headers=h)
