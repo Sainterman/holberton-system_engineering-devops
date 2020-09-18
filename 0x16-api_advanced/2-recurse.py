@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Get subscribers count from existing subreddit"""
+""" Get a list of titles for all hot posts in subreddit"""
 
 import requests
 

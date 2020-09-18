@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" Get subscribers count from existing subreddit"""
+"""get top 10 hot posts from subreddit"""
 
 import requests
 
 
 def top_ten(subreddit):
-    """ Request about.json to subredit"""
+    """ request hot JSON and limit 10 posts"""
     DOMAIN = 'https://www.reddit.com/'
     USER_AGENT = 'linux:subredditscript:v1 (by /u/sancagar)'
     h = {'User-Agent': USER_AGENT}
