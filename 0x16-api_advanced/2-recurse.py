@@ -5,7 +5,7 @@ import requests
 
 
 def recurse(subreddit, after=None, hot_list=[]):
-    """ """
+    """ use recursion to get every hot post with the after param"""
     DOMAIN = 'https://www.reddit.com/'
     USER_AGENT = 'linux:subredditscript:v1 (by /u/sancagar)'
     h = {'User-Agent': USER_AGENT}
