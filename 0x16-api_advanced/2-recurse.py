@@ -13,9 +13,9 @@ def recurse(subreddit, after=None, hot_list=[]):
     if after:
         URL += '?after={}'.format(after)
     req = requests.get(URL, headers=h)
+    data = req.json()
     try:
-        data = req.json().get('data')
-        posts = data.get('children')
+        posts = data['data']['children']
     except KeyError:
         return None
     for post in posts:
