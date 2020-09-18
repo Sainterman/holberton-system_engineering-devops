@@ -13,8 +13,8 @@ def recurse(subreddit, after=None, hot_list=[]):
     if after:
         URL += '?after={}'.format(after)
     req = requests.get(URL, headers=h)
-    data = req.json().get('data')
     try:
+        data = req.json().get('data')
         posts = data.get('children')
     except KeyError:
         return None
